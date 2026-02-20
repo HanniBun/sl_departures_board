@@ -247,10 +247,10 @@
 // VÄNSTER KOLUMN
 const LEFT_CONFIG = {
   // Hållplats-ID från SL API (se https://transport.integration.sl.se/v1/sites?expand=true för att hitta rätt ID)
-  siteId: 9001,
+  siteId: 9520,
   
   // Transporttyp som ska visas ("tram", "train", "metro", eller "bus")
-  transportType: ["metro"],
+  transportType: ["train"],
   
   // Direction code från SL (1 eller 2, beroende på linje/håll)
   directionCode: 1,
@@ -266,17 +266,17 @@ const LEFT_CONFIG = {
 // HÖGER KOLUMN
 const RIGHT_CONFIG = {
   // Hållplats-ID från SL API (se https://transport.integration.sl.se/v1/sites?expand=true för att hitta rätt ID)
-  siteId: 9001,
+  siteId: 9520,
   
   // Transporttyp som ska visas ("tram", "train", "metro", eller "bus")
-  transportType: "train",
+  transportType: "bus",
   
   // Direction code från SL API (1 eller 2, beroende på linje/håll)
   directionCode: 1,
   
   // Filtrera efter linjenummer (tom array = visa alla)
   // Exempel: ['1', '2', '3', '4'] visar bara dessa linjer
-  filterLines: [],
+  filterLines: ['758', '756'],
   
   // Antal avgångar att visa
   numDepartures: 3,
